@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Stranger Things</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <audio style="display: none;" type="audio/*mpeg" controls="controls" autoplay="autoplay"  loop id="video">
+        <source src="Stranger Things - Abertura.mp3" >
+    </audio>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+            </div>
+            <div class="col-md-6 d-block mx-auto">
+                <div class="card border-0 mb-5">
+                    <div class="card-body">
+                        <h1 class="text-center text-white">Você realmente conhece a série Stranger Things</h1>
+                        <div class="botoes">
+                            <button class="btn btn-stranger btn-block my-3" id="quiz">Iniciar o Quiz</button>
+                            <button class="btn btn-shadow btn-block">Ranking Geral</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="modal-perguntas">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header header-background p-0">
+                        <img src="images/img-1.jpg" alt="" class="img-fluid imagem" style="background-size: cover">
+                        <!-- <h5 class="modal-title">Título do modal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button> -->
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="pergunta">Qual o nome dá cidade fictícia onde se passa a série?</h5>
+                        <div class="respostas">
+                        <ul class="resposta">
+                            <li pergunta="1">Derry</li>
+                            <li pergunta="1">Hawkins</li>
+                            <li pergunta="1">Mystic Falls</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12 footer">
+                        <div class="row">
+                            
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-stranger btn-block" data-dismiss="modal">Cancelar</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="modal-final" style="background: #000;">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header header-background p-0">
+                                <img src="images/img-4.jpg" alt="" class="img-fluid" style="background-size: cover">
+                                <!-- <h5 class="modal-title">Título do modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                                </button> -->
+                            </div>
+                            <div class="modal-body">
+                                <h1 class="pergunta">Parabéns mandou muito bem!</h1>
+                                <h5 class="placar badge badge-danger"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="modal-zero" style="background: #000;">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header header-background p-0">
+                            <img src="images/img-5.jpg" alt="" class="img-fluid" style="background-size: cover">
+                            <!-- <h5 class="modal-title">Título do modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                            </button> -->
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="pergunta">Alguém precisa assistir a série novamente!</h1>
+                            <span class="placar badge badge-danger"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
